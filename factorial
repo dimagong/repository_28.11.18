@@ -1,0 +1,9 @@
+function factorialize(num) {
+  var count = 1;
+  if(num > 1) {
+    count = num * factorialize(num-1);
+  }
+  return count;
+}
+
+factorialize(3);
