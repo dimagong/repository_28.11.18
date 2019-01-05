@@ -1,0 +1,26 @@
+function confirmEnding(str, target) {
+  // "Never give up and good luck will find you."
+  // -- Falcor
+  var max = str.length;
+  var min = target.length;
+  var count = str.indexOf(target);
+  
+ 
+  var repeatNumber = count;  //if there are duplicate values
+  while(count != -1) {
+    count = str.indexOf(target, count+1);
+    if(count != -1) {
+      repeatNumber = count;
+    }
+  }
+ 
+
+  if (repeatNumber + min == max) {
+    return true;
+  } else {
+    return false;
+  }
+  
+}
+
+confirmEnding("Bastian", "n");
