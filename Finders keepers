@@ -1,0 +1,11 @@
+unction findElement(arr, func) {
+  let num = 0;
+  
+  var arrNew = arr.filter(func); 
+
+
+  return arrNew[0];
+
+}
+
+findElement([1, 2, 3, 4], num => num % 2 === 0);
