@@ -1,0 +1,19 @@
+function mutation(arr) {
+
+  var arrLower_0 = arr[0].toLowerCase();
+  var arrLower_1 = arr[1].toLowerCase();
+
+  var arrNew = arrLower_0.split('');
+  var arrEnd =arrLower_1.split('');
+
+  for(var i = 0; i < arrEnd.length; i++) {
+    var litera = arrEnd[i];
+    if(arrNew.indexOf(litera) == -1) {
+      return false;
+    }
+  }
+
+  return true;
+}
+
+mutation(["hello", "hey"]);
